@@ -11,7 +11,7 @@
 <body>
         <div class="row">
             <!-- Menu vertical -->
-            <div class="col-2 menu_vertical">
+            <div class="col-3 menu_vertical">
                 <ul class="nav flex-column nav1">
                     <li class="nav-item">
                         <a class="perfil text-dark" href="perfil.html">
@@ -21,28 +21,28 @@
                     </li>
                     <hr>
                     <li class="nav-item">
-                      <a class="nav-link text-dark m-3" href="#">Resumen</a>
+                      <a class="nav-link text-dark m-3" href="modulo_1.html">Modulo principal</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark m-3" href="#">Usuarios del sistema</a>
+                      <a class="nav-link text-dark m-3" href="#">Modulo de usuarios del sistema</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark m-3" href="#">Clientes</a>
+                      <a class="nav-link text-dark m-3" href="#">Módulo de clientes</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark m-3" href="#">Categorias</a>
+                      <a class="nav-link text-dark m-3" href="#">Módulo de categorias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark m-3">Productos</a>
+                        <a class="nav-link text-dark m-3">Módulo de productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark m-3">Pedido</a>
+                        <a class="nav-link text-dark m-3">Módulo de pedido</a>
                     </li>
                 </ul>
             </div>
             <!-- Menu vertical -->
 
-            <div class="col-10">
+            <div class="col-9">
                 <a class="navbar-brand" href="iniciar_sesión.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-arrow-left-square m-1" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
@@ -52,8 +52,16 @@
 
                 <div>
                     <div class="row">
+                        <div class="col-3 m-1">
+                            <p>Número de documento</p>
+                        </div>
+                        <div class="col-10">
+                            <input type="number" class="form-control" id="number-input" min="0">
+                        </div>
+                    </div><br>
+                    <div class="row">
                         <div class="col-2 m-1">
-                            <p>Nombres y apellidos</p>
+                            <p>Nombres</p>
                         </div>
                         <div class="col-10">
                             <input type="text" class="form-control" id="inputPassword">
@@ -61,47 +69,49 @@
                     </div><br>
                     <div class="row">
                         <div class="col-2 m-1">
-                            <p>Correo electrónico</p>
+                            <p>Apellidos</p>
                         </div>
                         <div class="col-10">
-                            <input type="text" class="form-control" id="inputPassword">
+                          <input type="text" class="form-control" id="inputPassword">   
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-2 m-1">
-                            <p>Género</p>
+                            <p>Email</p>
                         </div>
                         <div class="col-10">
-                            <select class="form-select form-select-sm" aria-label="small select example">
-                                <option selected>Seleccione</option>
-                                <option value="1">Masculino</option>
-                                <option value="2">Femenino</option>
-                              </select>
+                          <input type="text" class="form-control" id="inputPassword"> 
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="col-2 m-1">
-                            <p>Fecha de nacimiento</p>
-                        </div>
-                        <div class="col-10">
-                            <form>
-                                <div class="row">
-                                  <div class="col-md-4">
-                                    <label for="day" class="form-label">Día</label>
-                                    <input type="number" class="form-control" id="day" name="day" min="1" max="31">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <label for="month" class="form-label">Mes</label>
-                                    <input type="number" class="form-control" id="month" name="month" min="1" max="12">
-                                  </div>
-                                  <div class="col-md-4">
-                                    <label for="year" class="form-label">Año</label>
-                                    <input type="number" class="form-control" id="year" name="year" min="1900" max="2024">
-                                  </div>
-                                </div>
-                              </form>
-                        </div>
-                    </div><br><br>
+                      <div class="col-2 m-1">
+                          <p>Celular</p>
+                      </div>
+                      <div class="col-10">
+                        <input type="number" class="form-control" id="inputPassword" min="0" max="10"> 
+                      </div>
+                    </div><br>
+                    <div class="row">
+                      <div class="col-2 m-1">
+                          <p>Email</p>
+                      </div>
+                      <div class="col-10">
+                        <input type="text" class="form-control" id="inputPassword"> 
+                      </div>
+                    </div><br>
+                    <div class="row">
+                      <div class="col-2 m-1">
+                          <p>contraseña</p>
+                      </div>
+                      <div class="col-10">
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                      <div id="passwordHelpBlock" class="form-text"> 
+                      </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <br><br>
 
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Cambiar contraseña

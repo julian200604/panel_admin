@@ -44,44 +44,136 @@
             
 
             <div class="col-9">
+                <div>
+                    <table class="table p-5 m-3">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">documento de identidad</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Em</th>
+                            <th scope="col"></th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>123456789</td>
+                            <td>Juan</td>
+                            <td>Perez</td>
+                            <td>juan@gmail.com</td>
+                            <td>3124567089</td>
+                            <td>Cal 11 #20-4</td>
+                            <td>*******</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Actualizar
+                              </button>
+                            </td>
+                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Eliminar
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>987654321</td>
+                            <td>Alejandro</td>
+                            <td>Manrique</td>
+                            <td>m@gmail.com</td>
+                            <td>3234567809</td>
+                            <td>cr 11 #20-10</td>
+                            <td>******</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Actualizar
+                              </button>
+                            </td>
+                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Eliminar
+                              </button>
+                            </td>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>789456123</td>
+                            <td>Pedro</td>
+                            <td>Guillen</td>
+                            <td>gui@gmail.com</td>
+                            <td>3406789045</td>
+                            <td>Cr 12 #2-3</td>
+                            <td>*******</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Actualizar
+                              </button>
+                            </td>
+                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Eliminar
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                
+                  
+                 <!-- Modal1 -->
+                
+                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Actualizar datos de cliente</p><br>
+                        <p>documento de identidad</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Nombres</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Apellidos</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+
+                        <p>Email</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Celular</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Dirección</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+
+                        <p>Contraseña</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+                  
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal1-->
+
+                  <!--Modal2-->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Eliminar cliente</p><br>
+                        <p>¿Desea Eliminar este cliente?</p>
+                        
+                  
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Si</button>
+                          <button type="button" class="btn btn-primary">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal2-->
+            </div>
                  
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="img/cat1.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="text-center py-4">Baterias</h5>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col">
-              <div class="card">
-                <img src="img/cat2.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="text-center py-4">smartwach</h5>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col">
-              <div class="card">
-                <img src="img/cat3.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="text-center py-4">Auriculares</h5>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col">
-              <div class="card">
-                <img src="img/cat4.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                 <h5 class="text-center py-4">Entretenimiento</h5>
-                </div>
-              </div>
-            </div>
-        </div>
+        
 
 
 

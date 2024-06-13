@@ -24,191 +24,57 @@
                       <a class="nav-link text-dark m-3" href="modulo_1.html">Modulo principal</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark m-3" href="#">Modulo de usuarios del sistema</a>
+                      <a class="nav-link text-dark m-3" href="modulo_2.html">Modulo de usuarios del sistema</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark m-3" href="#">Módulo de clientes</a>
+                      <a class="nav-link text-dark m-3" href="modulo_3.html">Módulo de clientes</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark m-3" href="#">Módulo de categorias</a>
+                      <a class="nav-link text-dark m-3" href="modulo_4.html">Módulo de categorias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark m-3">Módulo de productos</a>
+                        <a class="nav-link text-dark m-3" href="modulo_5.html">Módulo de productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark m-3">Módulo de pedido</a>
+                        <a class="nav-link text-dark m-3" href="modulo_6.html">Módulo de pedido</a>
                     </li>
                 </ul>
             </div>
             <!-- Menu vertical -->
 
             <div class="col-9">
-                <a class="navbar-brand" href="iniciar_sesión.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-arrow-left-square m-1" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
-                    </svg>
-                </a><br><br><br><br>
-                <div class="row">
-                    <div class="col"><p class="fw-bold fs-5">Cantidad de clientes: </p></div>
-                    <div class="col"><p class="text-end fs-5">40</p></div>
-                </div>
-                
-                <div>
-                    <table class="table p-5">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">documento de identidad</th>
-                            <th scope="col">Nombres</th>
-                            <th scope="col">Apellidos</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Celular</th>
-                            <th scope="col">Dirección</th>
-                            <th scope="col">Contraseña</th>
-                            <th></th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>123456789</td>
-                            <td>Juan</td>
-                            <td>Perez</td>
-                            <td>juan@gmail.com</td>
-                            <td>3124567089</td>
-                            <td>Cal 11 #20-4</td>
-                            <td>*******</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Editar
-                              </button>
-                            </td>
-                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Eliminar
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>987654321</td>
-                            <td>Alejandro</td>
-                            <td>Manrique</td>
-                            <td>m@gmail.com</td>
-                            <td>3234567809</td>
-                            <td>cr 11 #20-10</td>
-                            <td>******</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Editar
-                              </button>
-                            </td>
-                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Eliminar
-                              </button>
-                            </td>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>789456123</td>
-                            <td>Pedro</td>
-                            <td>Guillen</td>
-                            <td>gui@gmail.com</td>
-                            <td>3406789045</td>
-                            <td>Cr 12 #2-3</td>
-                            <td>*******</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Editar
-                              </button>
-                            </td>
-                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Eliminar
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-                
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="col-3 m-1">
-                                <p>Número de documento</p>
-                            </div>
-                            <div class="col-10">
-                                <input type="number" class="form-control" id="number-input" min="0">
-                            </div>
-                        </div><br>
-                        <div class="row">
-                            <div class="col-2 m-1">
-                                <p>Nombres</p>
-                            </div>
-                            <div class="col-10">
-                                <input type="text" class="form-control" id="inputPassword">
-                            </div>
-                        </div><br>
-                        <div class="row">
-                            <div class="col-2 m-1">
-                                <p>Apellidos</p>
-                            </div>
-                            <div class="col-10">
-                              <input type="text" class="form-control" id="inputPassword">   
-                            </div>
-                        </div><br>
-                        <div class="row">
-                            <div class="col-2 m-1">
-                                <p>Email</p>
-                            </div>
-                            <div class="col-10">
-                              <input type="text" class="form-control" id="inputPassword"> 
-                            </div>
-                        </div><br>
-                        <div class="row">
-                          <div class="col-2 m-1">
-                              <p>Celular</p>
-                          </div>
-                          <div class="col-10">
-                            <input type="number" class="form-control" id="inputPassword" min="0" max="10"> 
-                          </div>
-                        </div><br>
-                        <div class="row">
-                          <div class="col-2 m-1">
-                              <p>Email</p>
-                          </div>
-                          <div class="col-10">
-                            <input type="text" class="form-control" id="inputPassword"> 
-                          </div>
-                        </div><br>
-                        <div class="row">
-                          <div class="col-2 m-1">
-                              <p>contraseña</p>
-                          </div>
-                          <div class="col-10">
-                            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                          <div id="passwordHelpBlock" class="form-text"> 
-                          </div>
-                          </div>
-                        </div>
-                        
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
-                          <button type="button" class="btn btn-primary">Guardar</button>
-                        </div>
-                      </div>
+              
+              <div class="row">
+                <div class="col m-5">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/satisfaccion-del-consumidor.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text text-center fw-bold" >Cantidad de clientes</p>
+                      <p class="card-text text-center">100</p>
                     </div>
                   </div>
-                <div>
-
                 </div>
-                <div>
-
+                <div class="col m-5">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/paquete-o-empaquetar.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text text-center fw-bold">Cantidad de pedidos</p>
+                      <p class="card-text text-center">100</p>
+                    </div>
+                  </div>
                 </div>
+                <div class="col m-5">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/pedido-en-linea.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text text-center fw-bold">Cantidad de productos</p>
+                      <p class="card-text text-center">100</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            
 
 
 

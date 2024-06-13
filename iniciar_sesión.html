@@ -28,9 +28,26 @@
                         <img src="img/facebook (4).png" width="50px">
                     </div>
                     <div class="col-auto">
-                        <a href="perfil.html"><button type="submit" class="btn btn-primary m-1">Acceder</button></a>
-                        <p class="texto1 m-1 text-end">Recuperar contraseña</p>
-                    </div>
+                        <a  href="perfil.html"><button type="submit" class="btn btn-primary m-1">Acceder</button></a>
+                        <a class="" data-bs-toggle="modal" data-bs-target="#exampleModal">Recuperar contraseña</a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Recupera tu contraseña</h1>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Ingresa tu correo electrónico</p>
+                                  <input type="text" class="form-control" id="inputPassword" placeholder="email" style="width: 460px;"><br>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <button type="button" class="btn btn-primary">Aceptar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div> 
                 </div>
             </div>
         </div>

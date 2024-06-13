@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+        <div class="row">
+            <!-- Menu vertical -->
+            <div class="col-3 menu_vertical">
+                <ul class="nav flex-column nav1">
+                    <li class="nav-item">
+                        <a class="perfil text-dark" href="perfil.html">
+                            <img src="img/perfil.png" alt="Logo" width="50" height="50" class="m-2">
+                            Perfil de usuario
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark m-3" href="modulo_1.html">Modulo principal</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark m-3" href="modulo_2.html">Modulo de usuarios del sistema</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark m-3" href="modulo_3.html">Módulo de clientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark m-3" href="modulo_4.html">Módulo de categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark m-3" href="modulo_5.html">Módulo de productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark m-3" href="modulo_6.html">Módulo de pedido</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu vertical -->
+            
+
+            <div class="col-9">
+                
+                
+                
+                <div>
+                    <table class="table p-5">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Número de documento</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Tipo de rol</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Celular</th>
+                            <th scope="col">Contraseña</th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>123456789</td>
+                            <td>Juan</td>
+                            <td>Perez</td>
+                            <td>Admin</td>
+                            <td>juan@gmail</td>
+                            <td>3124567089</td>
+                            <td>*******</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Actualizar
+                              </button>
+                            </td>
+                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Deshabilitar
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>987654321</td>
+                            <td>Alejandro</td>
+                            <td>Manrique</td>
+                            <td>Admin</td>
+                            <td>m@gmail.com</td>
+                            <td>3234567809</td>
+                            <td>******</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Actualizar
+                              </button>
+                            </td>
+                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Deshabilitar
+                              </button>
+                            </td>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>789456123</td>
+                            <td>Pedro</td>
+                            <td>Guillen</td>
+                            <td>Admin</td>
+                            <td>gui@gmail.com</td>
+                            <td>3406789045</td>
+                            <td>*******</td>
+                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Actualizar
+                              </button>
+                            </td>
+                            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Deshabilitar
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                
+                  <!-- Modal1 -->
+                
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Actualizar datos de usuario</p><br>
+                        <p>Número de documento</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Nombres</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Apellidos</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Tipo de rol</p>
+                        <select class="form-select" aria-label="Default select example" style="width: 300px;">
+                            <option value="2">Admin</option>
+                            <option value="3">Otro</option>
+                        </select>
+
+                        <p>Email</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Celular</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+
+                        <p>Contraseña</p>
+                        <input type="text" class="form-control" id="inputPassword" style="width: 300px;"><br>
+                  
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal1-->
+
+                  <!--Modal2-->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content d-flex justify-content-center align-items-center">
+                        <p class="fw-bold m-2">Deshabilitar Usuario</p><br>
+                        <p>¿Desea deshabilitar este usuario?</p>
+                        
+                  
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Si</button>
+                          <button type="button" class="btn btn-primary">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Modal2-->
+    
+        
+            </div>
+
+
+
+
+
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
+</body>
+</html>

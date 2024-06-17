@@ -15,17 +15,32 @@
 }
 
 .nav-item:hover {
-    background-color: rgb(241, 241, 240);
+    background-color:  rgb(182, 178, 178);
 }
 
 .menu_vertical {
     width: 500px;
 }
 
-.nav1 {
-}
 
 .small-input {
     padding: 0.375rem 0.75rem; /* Ajusta el relleno */
     height: calc(1.5em + 0.75rem + 2px); /* Ajusta la altura */
 }
+
+
+.menu_vertical {
+    background-color: rgb(144, 142, 142);
+    min-height: 100vh;
+    max-width: 20vh;
+    
+}
+
+
+
+
+
+
+
+
+
